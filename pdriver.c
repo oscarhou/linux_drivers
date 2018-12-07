@@ -22,7 +22,7 @@ static uint32_t k_ledGpio = 21;
 static int irqNumber;
 static unsigned long currJiffie;
 static struct hrtimer htimer;
-static ktime_t kt_period
+static ktime_t kt_period;
 
 
 static ssize_t data_read(struct file *filep, char *buffer, size_t len, loff_t *offset)
